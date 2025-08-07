@@ -9,7 +9,7 @@ dotenv.config();
 
 export default async function fetch(pipeSize, sheetSize) {
   try {
-    const key = process.env.CACHE_KEY;
+    const key = process.env.CACHE__KEY;
     const cachedResult = cache.get(key);
     let fetchedArr;
 

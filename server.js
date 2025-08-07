@@ -5,7 +5,7 @@ import router from "./routes/index.js";
 import errorHandler from "./middleware/error-handler.js";
 dotenv.config();
 const app = express();
-const PORT = process.env.PORT;
+const PORT = parseInt(process.env.PORT, 10);
 
 app.use(cors());
 app.use("/api", router);
